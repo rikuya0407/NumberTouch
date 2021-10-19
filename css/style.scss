@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    & .header-word{
+        font-size: 36px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    & .time{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+main{
+    text-align: center;
+    & .container{
+        max-width: 80%;
+        height: 400px;
+        margin: 0 auto;
+        text-align: center;
+        & .number-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 100%;
+            height: 90%;
+            background-color:rgba(0, 255, 255, 0.747);
+        }
+    }
+    & .start-btn{
+        width: 100px;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 40px;
+        & .start{
+            font-size: 24px;
+            font-family:'Times New Roman', Times, serif ;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.num-btn{
+    background-color:darkblue;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: 500;
+    margin:30px 10px;
+    flex-basis:20%;
+    border-radius: 10px;
+}
+
+.inview{
+    background-color: gray;
+    color: white;
+}
+
+.top-screen{
+    margin-bottom: 30px;
+    & a{
+        text-decoration: none;
+        display: none;
+        &.inview{
+            display: block;
+            background-color: white;
+            color: black;
+        }
+    }
+}
